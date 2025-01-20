@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useMemo, useRef, RefObject } from "react";
+import React, { useMemo, useRef } from "react";
 
 import { cn } from "@/lib/utils";
 import { useDimensions } from "@/hooks/use-debounced-dimensions";
