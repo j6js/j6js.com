@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Noto_Sans, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const notoSans = Noto_Sans({
+  variable: "--font-noto-sans",
   subsets: ["latin"],
 });
 
@@ -15,6 +15,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Jackson Kelly",
   description: "Jackson Kelly's Portfolio / Profile",
+  openGraph: {
+    images: [
+      {
+        url: "https://d7lpkeztx5.ufs.sh/f/ndNtYoS2yiYlOSOL8eGis5ADEctaXvLhGzxuoN8Tm0dWJQVS",
+        width: 1200,
+        height: 627,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -25,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${notoSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
