@@ -20,7 +20,7 @@ const AnimatedGradient: React.FC<AnimatedGradientProps> = ({
   speed = 5,
   blur = "light",
 }) => {
-  const containerRef = useRef<any>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const dimensions = useDimensions(containerRef);
 
   const circleSize = useMemo(
