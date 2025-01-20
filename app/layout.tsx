@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans, Geist_Mono } from "next/font/google";
+import { Noto_Sans, Geist_Mono, DynaPuff } from "next/font/google";
 import "./globals.css";
 
 const notoSans = Noto_Sans({
@@ -9,6 +9,11 @@ const notoSans = Noto_Sans({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const dynaPuff = DynaPuff({
+  variable: "--font-dyna-puff",
   subsets: ["latin"],
 });
 
@@ -34,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${notoSans.variable} ${geistMono.variable} antialiased`}
+        className={`${notoSans.variable} ${geistMono.variable} ${dynaPuff.variable} antialiased`}
       >
         {children}
       </body>

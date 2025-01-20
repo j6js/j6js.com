@@ -1,3 +1,4 @@
+import { code } from "motion/react-client";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -11,6 +12,8 @@ export default {
     extend: {
       fontFamily: {
         noto: ["var(--font-noto-sans)", "sans-serif"],
+        code: ["var(--font-geist-mono)", "monospace"],
+        dynapuff: ["var(--font-dyna-puff)", "cursive"],
       },
       colors: {
         background: "var(--background)",
