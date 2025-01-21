@@ -52,11 +52,11 @@ export default function Intro() {
           </motion.div>
         </motion.div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 flex justify-center">
+      <div className="absolute bottom-0 left-0 right-0 h-44 flex justify-center">
         <div>
           <motion.div
-            initial={{ translateY: -10 }}
-            animate={{ translateY: 25 }}
+            initial={{ translateY: 3 }}
+            animate={{ translateY: 9 }}
             transition={{
               repeat: Infinity,
               duration: 1,
@@ -79,8 +79,8 @@ export default function Intro() {
             </svg>
           </motion.div>
           <motion.div
-            initial={{ translateY: -15 }}
-            animate={{ translateY: 25 }}
+            initial={{ translateY: 20 }}
+            animate={{ translateY: 0 }}
             transition={{
               repeat: Infinity,
               duration: 1,
