@@ -1,10 +1,17 @@
 "use client";
 import { motion } from "motion/react";
 import Image from "next/image";
+import { useRef } from "react";
+import { cn } from "@/lib/utils";
+import BreathingText from "./fancy/breathing-text";
 
 export default function Intro() {
+  const textRef = useRef<any>(null);
   return (
-    <div className="font-dynapuff text-[60px] flex items-center justify-center h-screen">
+    <div
+      className="font-dynapuff text-[60px] flex items-center justify-center h-screen"
+      ref={textRef}
+    >
       <motion.div
         initial={{ filter: "blur(13px)" }}
         animate={{ filter: "blur(0px)" }}
@@ -34,7 +41,12 @@ export default function Intro() {
           animate={{ scaleX: 1, scaleY: 1 }}
           transition={{ delay: 0.15, duration: 1, ease: "easeInOut" }}
         >
-          Jackson Kelly
+          <BreathingText
+            label="Jackson Kelly"
+            fromFontVariationSettings="'wght' 400, 'slnt' -10"
+            toFontVariationSettings="'wght' 700, 'slnt' 1"
+            staggerDuration={0.6}
+          />
         </motion.div>
       </motion.div>
     </div>
