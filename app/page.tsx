@@ -1,10 +1,12 @@
-"use client";
+"use server";
 import Background from "@/components/background";
+import Intro from "@/components/intro";
 
-export default function Home() {
+export default async function Home() {
   return (
     <div>
       <Background />
+      <Intro />
     </div>
   );
 }

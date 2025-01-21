@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useMemo, useRef } from "react";
-
 import { cn } from "@/lib/utils";
 import { useDimensions } from "@/hooks/use-debounced-dimensions";
 
@@ -44,6 +43,7 @@ const AnimatedGradient: React.FC<AnimatedGradientProps> = ({
           <svg
             key={index}
             className="absolute animate-background-gradient"
+            suppressHydrationWarning
             style={
               {
                 top: `${Math.random() * 50}%`,

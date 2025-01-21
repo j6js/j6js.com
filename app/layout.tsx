@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Noto_Sans, Geist_Mono, DynaPuff } from "next/font/google";
+import { Noto_Sans, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const notoSans = Noto_Sans({
@@ -12,9 +13,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const dynaPuff = DynaPuff({
+const dynaPuff = localFont({
   variable: "--font-dyna-puff",
-  subsets: ["latin"],
+  src: "./DynaPuff.ttf",
 });
 
 export const metadata: Metadata = {

@@ -13,7 +13,7 @@ export default {
       fontFamily: {
         noto: ["var(--font-noto-sans)", "sans-serif"],
         code: ["var(--font-geist-mono)", "monospace"],
-        dynapuff: ["var(--font-dyna-puff)", "cursive"],
+        dynapuff: ["var(--font-dyna-puff)", "sans-serif"],
       },
       colors: {
         background: "var(--background)",
