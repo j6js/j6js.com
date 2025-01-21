@@ -8,7 +8,7 @@ import { useDimensions } from "@/hooks/use-debounced-dimensions";
 interface AnimatedGradientProps {
   colors: string[];
   speed?: number;
-  blur?: "light" | "medium" | "heavy";
+  blur?: "light" | "medium" | "heavy" | "none";
 }
 
 const randomInt = (min: number, max: number) => {
@@ -33,7 +33,9 @@ const AnimatedGradient: React.FC<AnimatedGradientProps> = ({
       ? "blur-2xl"
       : blur === "medium"
         ? "blur-3xl"
-        : "blur-[100px]";
+        : blur === "none"
+          ? "blur-none"
+          : "blur-[100px]";
 
   return (
     <div ref={containerRef} className="absolute inset-0 overflow-hidden">
