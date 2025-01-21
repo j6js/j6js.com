@@ -10,7 +10,7 @@ export default function Intro() {
   return (
     <div className="transition-all duration-700">
       <div
-        className="font-dynapuff text-[60px] flex items-center justify-center h-screen"
+        className="z-[2] font-dynapuff text-[60px] flex items-center justify-center h-screen"
         ref={textRef}
       >
         <motion.div
@@ -58,7 +58,7 @@ export default function Intro() {
         animate={{ filter: "blur(0px)", scale: 1 }}
         transition={{ duration: 0.9, ease: "easeInOut" }}
       >
-        <div className="absolute bottom-0 left-0 right-0 flex justify-center">
+        <div className="z-[1] absolute bottom-0 left-0 right-0 flex justify-center">
           <div>
             <motion.div
               initial={{ filter: "blur(10px)", scale: 0.8 }}

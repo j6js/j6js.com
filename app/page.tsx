@@ -2,6 +2,7 @@
 import Background from "@/components/background";
 import Intro from "@/components/intro";
 import Entry from "@/components/entry";
+import Cards from "@/components/cards";
 import { Suspense, ReactNode } from "react";
 
 export default async function Home() {
@@ -11,6 +12,7 @@ export default async function Home() {
         <Entry>
           <Background />
           <Intro />
+          <Cards />
         </Entry>
       </Suspense>
     </div>
