@@ -5,8 +5,8 @@ import AnimatedGradient from "./fancy/animated-gradient-with-svg";
 export default function Background() {
   return (
     <div>
-      <div className="fixed -z-50 bg-[#6d28a8] w-full h-screen"></div>
-      <div className="-z-40 fixed min-w-full h-screen bg-[#CA7DF9] blur-3xl transition-colors duration-1000 ease-in-out">
+      <div className="fixed z-[-4] bg-[#6c28a8] w-full h-screen"></div>
+      <div className="z-[-2] fixed min-w-full h-screen bg-[#CA7DF9] blur-3xl transition-colors duration-1000 ease-in-out">
         <div className="w-1/2 h-1/2 bg-inherit relative float-left">
           <AnimatedGradient
             colors={[

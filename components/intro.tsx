@@ -8,7 +8,7 @@ import BreathingText from "./fancy/breathing-text";
 export default function Intro() {
   const textRef = useRef<HTMLDivElement>(null);
   return (
-    <div>
+    <div className="transition-all duration-700">
       <div
         className="font-dynapuff text-[60px] flex items-center justify-center h-screen"
         ref={textRef}
@@ -48,62 +48,71 @@ export default function Intro() {
               fromFontVariationSettings="'wght' 400, 'slnt' -10"
               toFontVariationSettings="'wght' 700, 'slnt' 1"
               staggerDuration={0.6}
+              staggerFrom="center"
             />
           </motion.div>
         </motion.div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 h-44 flex justify-center">
-        <div>
-          <motion.div
-            initial={{ translateY: 3 }}
-            animate={{ translateY: 9 }}
-            transition={{
-              repeat: Infinity,
-              duration: 1,
-              repeatType: "reverse",
-              ease: "easeInOut",
-            }}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              version="1.1"
-              x="0px"
-              y="-10px"
-              viewBox="0 0 72 90"
-              enableBackground="new 0 0 72 72"
-              className="fill-slate-900 dark:fill-yellow-200 w-24 h-24 translate-y-20"
+      <motion.div
+        initial={{ filter: "blur(10px)", scale: 0.5 }}
+        animate={{ filter: "blur(0px)", scale: 1 }}
+        transition={{ duration: 0.9, ease: "easeInOut" }}
+      >
+        <div className="absolute bottom-0 left-0 right-0 flex justify-center">
+          <div>
+            <motion.div
+              initial={{ translateY: 2 }}
+              animate={{ translateY: 3 }}
+              transition={{
+                repeat: Infinity,
+                duration: 1,
+                repeatType: "reverse",
+                ease: "easeInOut",
+                delay: 1,
+              }}
             >
-              <g>
-                <polygon points="36,43.7 27.6,35.2 25.4,37.4 36,47.9 46.6,37.3 44.4,35.2  " />
-              </g>
-            </svg>
-          </motion.div>
-          <motion.div
-            initial={{ translateY: 20 }}
-            animate={{ translateY: 0 }}
-            transition={{
-              repeat: Infinity,
-              duration: 1,
-              repeatType: "reverse",
-              ease: "easeInOut",
-            }}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              version="1.1"
-              x="0px"
-              y="0px"
-              viewBox="0 0 72 90"
-              enableBackground="new 0 0 72 72"
-              className="fill-slate-900 dark:fill-yellow-200 w-24 h-24"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                x="0px"
+                y="-10px"
+                viewBox="0 0 72 90"
+                enableBackground="new 0 0 72 72"
+                className="fill-slate-900 dark:fill-yellow-200 w-24 h-24 translate-y-20"
+              >
+                <g>
+                  <polygon points="36,43.7 27.6,35.2 25.4,37.4 36,47.9 46.6,37.3 44.4,35.2  " />
+                </g>
+              </svg>
+            </motion.div>
+            <motion.div
+              initial={{ translateY: 20 }}
+              animate={{ translateY: -0.41 }}
+              transition={{
+                repeat: Infinity,
+                duration: 1,
+                repeatType: "reverse",
+                ease: "easeInOut",
+                delay: 1,
+              }}
             >
-              <g>
-                <polygon points="46.6,27 44.4,24.9 36,33.3 27.6,24.9 25.4,27 36,37.5  " />
-              </g>
-            </svg>
-          </motion.div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                x="0px"
+                y="0px"
+                viewBox="0 0 72 90"
+                enableBackground="new 0 0 72 72"
+                className="fill-slate-900 dark:fill-yellow-200 w-24 h-24"
+              >
+                <g>
+                  <polygon points="46.6,27 44.4,24.9 36,33.3 27.6,24.9 25.4,27 36,37.5  " />
+                </g>
+              </svg>
+            </motion.div>
+          </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

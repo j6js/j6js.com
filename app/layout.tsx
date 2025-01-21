@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${notoSans.variable} ${geistMono.variable} ${dynaPuff.variable} antialiased`}
+        className={`${notoSans.variable} ${geistMono.variable} ${dynaPuff.variable} bg-white dark:bg-black antialiased`}
       >
         {children}
       </body>

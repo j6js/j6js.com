@@ -1,14 +1,17 @@
 "use server";
 import Background from "@/components/background";
 import Intro from "@/components/intro";
+import Entry from "@/components/entry";
 import { Suspense, ReactNode } from "react";
 
 export default async function Home() {
   return (
     <div>
       <Suspense fallback={suspenseFallback()}>
-        <Background />
-        <Intro />
+        <Entry>
+          <Background />
+          <Intro />
+        </Entry>
       </Suspense>
     </div>
   );
