@@ -9,50 +9,63 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        noto: ["var(--font-noto-sans)", "sans-serif"],
-        code: ["var(--font-geist-mono)", "monospace"],
-        dynapuff: ["var(--font-dyna-puff)", "sans-serif"],
-      },
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
-      animation: {
-        "background-gradient":
-          "background-gradient var(--background-gradient-speed, 15s) cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite",
-      },
-      keyframes: {
-        "background-gradient": {
-          "0%, 100%": {
-            transform: "translate(0, 0)",
-            animationDelay: "var(--background-gradient-delay, 0s)",
-          },
-          "20%": {
-            transform:
-              "translate(calc(100% * var(--tx-1, 1)), calc(100% * var(--ty-1, 1)))",
-          },
-          "40%": {
-            transform:
-              "translate(calc(100% * var(--tx-2, -1)), calc(100% * var(--ty-2, 1)))",
-          },
-          "60%": {
-            transform:
-              "translate(calc(100% * var(--tx-3, 1)), calc(100% * var(--ty-3, -1)))",
-          },
-          "80%": {
-            transform:
-              "translate(calc(100% * var(--tx-4, -1)), calc(100% * var(--ty-4, -1)))",
-          },
-        },
-      },
-    },
+  	extend: {
+  		fontFamily: {
+  			noto: [
+  				'var(--font-noto-sans)',
+  				'sans-serif'
+  			],
+  			code: [
+  				'var(--font-geist-mono)',
+  				'monospace'
+  			],
+  			dynapuff: [
+  				'var(--font-dyna-puff)',
+  				'sans-serif'
+  			]
+  		},
+  		colors: {
+  			background: 'var(--background)',
+  			foreground: 'var(--foreground)'
+  		},
+  		borderRadius: {
+  			lg: 'var(--radius)',
+  			md: 'calc(var(--radius) - 2px)',
+  			sm: 'calc(var(--radius) - 4px)'
+  		},
+  		animation: {
+  			'background-gradient': 'background-gradient var(--background-gradient-speed, 15s) cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite',
+  			circling: 'circling calc(var(--duration-duration)*1s) linear infinite'
+  		},
+  		keyframes: {
+  			'background-gradient': {
+  				'0%, 100%': {
+  					transform: 'translate(0, 0)',
+  					animationDelay: 'var(--background-gradient-delay, 0s)'
+  				},
+  				'20%': {
+  					transform: 'translate(calc(100% * var(--tx-1, 1)), calc(100% * var(--ty-1, 1)))'
+  				},
+  				'40%': {
+  					transform: 'translate(calc(100% * var(--tx-2, -1)), calc(100% * var(--ty-2, 1)))'
+  				},
+  				'60%': {
+  					transform: 'translate(calc(100% * var(--tx-3, 1)), calc(100% * var(--ty-3, -1)))'
+  				},
+  				'80%': {
+  					transform: 'translate(calc(100% * var(--tx-4, -1)), calc(100% * var(--ty-4, -1)))'
+  				}
+  			},
+  			circling: {
+  				'0%': {
+  					transform: 'rotate(calc(var(--offset) * 1deg)) translate(calc(var(--radius) * 1px), 0) rotate(calc(var(--offset) * -1deg))'
+  				},
+  				'100%': {
+  					transform: 'rotate(calc(360deg + (var(--offset) * 1deg))) translate(calc(var(--radius) * 1px), 0) rotate(calc(-360deg + (var(--offset) * -1deg)))'
+  				}
+  			}
+  		}
+  	}
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
