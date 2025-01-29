@@ -16,7 +16,7 @@ export default function Intro() {
   return (
     <div className="transition-all duration-700">
       <div
-        className="z-[2] font-dynapuff text-[60px] flex items-center justify-center h-screen"
+        className="z-[2] font-dynapuff text-[60px] flex flex-wrap flex-col md:flex-row items-center justify-center h-screen"
         ref={textRef}
       >
         <motion.div
@@ -38,26 +38,46 @@ export default function Intro() {
             />
           </motion.div>
         </motion.div>
-
-        <motion.div
-          initial={{ filter: "blur(10px)" }}
-          animate={{ filter: "blur(0px)" }}
-          transition={{ duration: 0.9, ease: "easeOut", delay: 0.9 }}
-        >
+        <div className="flex gap-4">
           <motion.div
-            initial={{ scaleX: 0.09, scaleY: 0.00001 }}
-            animate={{ scaleX: 1, scaleY: 1 }}
-            transition={{ delay: 1.05, duration: 1, ease: "easeInOut" }}
+            initial={{ filter: "blur(10px)" }}
+            animate={{ filter: "blur(0px)" }}
+            transition={{ duration: 0.9, ease: "easeOut", delay: 0.9 }}
           >
-            <BreathingText
-              label="Jackson Kelly"
-              fromFontVariationSettings="'wght' 400, 'slnt' -10"
-              toFontVariationSettings="'wght' 700, 'slnt' 1"
-              staggerDuration={0.6}
-              staggerFrom="center"
-            />
+            <motion.div
+              initial={{ scaleX: 0.09, scaleY: 0.00001 }}
+              animate={{ scaleX: 1, scaleY: 1 }}
+              transition={{ delay: 1.05, duration: 1, ease: "easeInOut" }}
+            >
+              <BreathingText
+                label="Jackson"
+                fromFontVariationSettings="'wght' 400, 'slnt' -10"
+                toFontVariationSettings="'wght' 700, 'slnt' 1"
+                staggerDuration={0.6}
+                staggerFrom="center"
+              />
+            </motion.div>
           </motion.div>
-        </motion.div>
+          <motion.div
+            initial={{ filter: "blur(10px)" }}
+            animate={{ filter: "blur(0px)" }}
+            transition={{ duration: 0.9, ease: "easeOut", delay: 0.9 }}
+          >
+            <motion.div
+              initial={{ scaleX: 0.09, scaleY: 0.00001 }}
+              animate={{ scaleX: 1, scaleY: 1 }}
+              transition={{ delay: 1.05, duration: 1, ease: "easeInOut" }}
+            >
+              <BreathingText
+                label="Kelly"
+                fromFontVariationSettings="'wght' 400, 'slnt' -10"
+                toFontVariationSettings="'wght' 700, 'slnt' 1"
+                staggerDuration={0.6}
+                staggerFrom="center"
+              />
+            </motion.div>
+          </motion.div>
+        </div>
       </div>
       <motion.div
         initial={{ filter: "blur(10px)", scale: 0.5 }}

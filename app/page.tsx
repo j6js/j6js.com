@@ -3,11 +3,14 @@ import Background from "@/components/background";
 import Intro from "@/components/intro";
 import Entry from "@/components/entry";
 import Cards from "@/components/cards";
+import Cursor from "@/components/cursor";
 import { Suspense, ReactNode } from "react";
+import Script from "next/script";
 
 export default async function Home() {
   return (
     <div>
+      <Cursor />
       <Suspense fallback={suspenseFallback()}>
         <Entry>
           <Background />
@@ -15,6 +18,8 @@ export default async function Home() {
           <Cards />
         </Entry>
       </Suspense>
+      <Script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js" />
+      <Script src="/lenis.js" type="module" />
     </div>
   );
 }
