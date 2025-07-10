@@ -45,8 +45,7 @@ export default function Home() {
           About Me
         </h2>
         <p className="text-violet-950 dark:text-violet-200 text-noto">
-          Kia ora, I&apos;m Jackson. I&apos;m a college student (for Americans:
-          high school), who&apos;s autistic and has ADHD. Since I was a small
+          Kia ora, I&apos;m Jackson. I&apos;m a high school student, who&apos;s autistic and has ADHD. Since I was a small
           child, I have always been interested in systems and how they work.
           Whenever I see some sort of system or a piece of technology, I always
           think about how something works and the process of it getting there.
