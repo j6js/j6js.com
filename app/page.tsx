@@ -45,7 +45,7 @@ export default function Home() {
           About Me
         </h2>
         <p className="text-violet-950 dark:text-violet-200 text-noto">
-          Kia ora, I&apos;m Jackson. I&apos;m a high school student, who&apos;s autistic and has ADHD. Since I was a small
+          Kia ora, I&apos;m Jackson. I&apos;m a high school student, who has a keen interest in all things technology. Since I was a small
           child, I have always been interested in systems and how they work.
           Whenever I see some sort of system or a piece of technology, I always
           think about how something works and the process of it getting there.
@@ -110,7 +110,7 @@ export default function Home() {
         <br />
        <ul className="text-violet-950 dark:text-violet-200 text-noto ">
           <li>
-            2025 - Audio, Lights, and Video in school production of High School Spoofical for Te Awamutu Intermediate
+            2025 - Audio, Lights, and Video for school production of <i>High School Spoofical</i> for Te Awamutu Intermediate
           </li>
         </ul>
         <br />
