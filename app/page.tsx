@@ -76,7 +76,7 @@ export default function Home() {
         </h2>
         <p className="text-violet-950 dark:text-violet-200 text-noto">
           <a
-            href="https://github.com/jxaq"
+            href="https://github.com/j6js"
             target="_blank"
             rel="noreferrer noopener"
             className="hover:text-blue-700 dark:hover:text-blue-300"
