@@ -143,6 +143,7 @@ export default function Home() {
             <i>More coming soon!</i>
           </li>
         </ul>
+        <br />
         <b className="text-violet-800 dark:text-violet-100">
           High School:
         </b>
