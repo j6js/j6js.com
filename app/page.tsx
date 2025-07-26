@@ -50,8 +50,7 @@ export default function Home() {
           Whenever I see some sort of system or a piece of technology, I always
           think about how something works and the process of it getting there.
           Over countless hours of reading, watching videos and talking to
-          people, I have managed to gain a sh*t ton of knowledge on almost
-          everything (I&apos;m not saying I know everything, but I know a lot).
+          people, I have managed to aquire lots of knowledge on almost any tech/politics related topic.
           <br />
           <br />
           One thing that stook out to me was programming, as it was a way to
@@ -144,6 +143,16 @@ export default function Home() {
             <i>More coming soon!</i>
           </li>
         </ul>
+        <b className="text-violet-800 dark:text-violet-100">
+          High School:
+        </b>
+        <br />
+       <ul className="text-violet-950 dark:text-violet-200 text-noto ">
+          <li>
+            2025 - Helped previous school with Audio, Lights, and Video in school production
+          </li>
+        </ul>
+        <br />
         <b className="text-violet-800 dark:text-violet-100">
           Intermediate (Middle School):
         </b>
