@@ -49,25 +49,33 @@ export default function Home() {
           child, I have always been interested in systems and how they work.
           Whenever I see some sort of system or a piece of technology, I always
           think about how something works and the process of it getting there.
-          Over countless hours of reading, watching videos and talking to
-          people, I have managed to aquire lots of knowledge on almost any tech related topic.
+          Over countless hours of reading, watching videos and actually dealing with technology,
+          I have managed to aquire lots of knowledge and skill on almost any tech related topic.
           <br />
           <br />
           One thing that became an interest was programming, as it was a way to
           create things, and some really advanced systems. One thing I
-          especially like about computers (mainly programming), is that it is
+          especially like about computers (and mainly programming), is that it's
           able to do extremely advanced things, like predicting the
           weather, or even controlling something, on the other side of the
           world with almost no delay. <br />
           <br />
-          Since September 2024, I have been learning HTML, CSS, and now
+          Another thing I've worked on in the past, is server systems.
+          I have managed to aquire some  server equipment, and setup
+          a proper homelab setup, which me and my family use on a daily basis.
+          It mainly runs Home Assistant, Frigate NVR, Unifi Controller, and they all
+          run on Proxmox.
+          <br /> <br />
+          In September 2024 - January 2025, I have worked on HTML, CSS, and 
           JavaScript with freeCodeCamp. One day before school ended in 2024, I
           received a certification for Responive Web Design, from freeCodeCamp.
-          Alongside their curriculum, I have been experimenting with TypeScript,
-          and mainly Next.js. I am now trying out my first real project in Next.js. That project would be this
+          With the help of their resources, I have  experimented with TypeScript,
+          and spefically Next.js. I have now finished my first real project in Next.js. That project would be this
           website.
           <br />
           <br />
+          Currently, I serve as the go-to tech support for my family, old school, and likely my
+          current school in the future.
         </p>
       </div>
       <div className="text-noto relative z-10 border border-slate-300 dark:border-slate-100 rounded-md shadow-md md:shadow-xl p-2 md:p-4 w-full md:w-2/5 mx-auto mt-4 md:mt-8">
