@@ -53,22 +53,20 @@ export default function Home() {
           people, I have managed to aquire lots of knowledge on almost any tech/politics related topic.
           <br />
           <br />
-          One thing that stook out to me was programming, as it was a way to
-          create systems, and some really advanced systems. One thing I
+          One thing that became an interest was programming, as it was a way to
+          create things, and some really advanced systems. One thing I
           especially like about computers (mainly programming), is that it is
-          able to do extremely advanced things, like literally predicting the
-          weather, or even controlling something else, on the other side of the
-          world with almost no latency. <br />
+          able to do extremely advanced things, like predicting the
+          weather, or even controlling something, on the other side of the
+          world with almost no delay. <br />
           <br />
-          Since around September 2024, I have been learning HTML, CSS, and now
+          Since September 2024, I have been learning HTML, CSS, and now
           JavaScript with freeCodeCamp. One day before school ended in 2024, I
           received a certification for Responive Web Design, from freeCodeCamp.
           Alongside their curriculum, I have been experimenting with TypeScript,
-          and mainly Next.js. After a binge-searching documentation session, I
-          am now trying out my first real project in Next.js (well, at least the
-          second revision of the first project). That project would be this
-          website. I know it only scratches the surface of what is possible with
-          most frameworks, and etc, but I am proud of it. <br />
+          and mainly Next.js. I am now trying out my first real project in Next.js. That project would be this
+          website.
+          <br />
           <br />
         </p>
       </div>
@@ -84,33 +82,6 @@ export default function Home() {
             className="hover:text-blue-700 dark:hover:text-blue-300"
           >
             GitHub
-          </a>
-          <br />
-          <a
-            href="https://twitter.com/JaxK5546"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="hover:text-blue-700 dark:hover:text-blue-300"
-          >
-            Twitter
-          </a>
-          <br />
-          <a
-            href="https://mastodon.social/jacksonk"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="hover:text-blue-700 dark:hover:text-blue-300"
-          >
-            Mastodon
-          </a>
-          <br />
-          <a
-            href="https://discord.com/users/632415379519569950"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="hover:text-blue-700 dark:hover:text-blue-300"
-          >
-            Discord
           </a>
           <br />
           <a
@@ -134,23 +105,12 @@ export default function Home() {
           <br />
         </p>
         <b className="text-violet-800 dark:text-violet-100">
-          Personal Work & Projects:
-        </b>
-        <br />
-        <ul className="text-violet-950 dark:text-violet-200 text-noto">
-          <li>This portfolio website!</li>
-          <li>
-            <i>More coming soon!</i>
-          </li>
-        </ul>
-        <br />
-        <b className="text-violet-800 dark:text-violet-100">
           High School:
         </b>
         <br />
        <ul className="text-violet-950 dark:text-violet-200 text-noto ">
           <li>
-            2025 - Helped previous school with Audio, Lights, and Video in school production
+            2025 - Audio, Lights, and Video in school production of High School Spoofical for Te Awamutu Intermediate
           </li>
         </ul>
         <br />
