@@ -50,7 +50,7 @@ export default function Home() {
           Whenever I see some sort of system or a piece of technology, I always
           think about how something works and the process of it getting there.
           Over countless hours of reading, watching videos and talking to
-          people, I have managed to aquire lots of knowledge on almost any tech/politics related topic.
+          people, I have managed to aquire lots of knowledge on almost any tech related topic.
           <br />
           <br />
           One thing that became an interest was programming, as it was a way to
