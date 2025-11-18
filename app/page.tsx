@@ -22,7 +22,7 @@ export default function Home() {
               Jackson Kelly
             </h1>
             <h3 className="font-kanit text-slate-600 dark:text-slate-400">
-              Learning Full-Stack Developer
+              Learning Developer, High-School Student, Tech Enthusiast
             </h3>
           </motion.div>
           <motion.div
