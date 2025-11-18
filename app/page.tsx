@@ -70,10 +70,11 @@ export default function Home() {
           <br /> <br />
           In September 2024 - January 2025, I have worked on HTML, CSS, and
           JavaScript with freeCodeCamp. One day before school ended in 2024, I
-          received a certification for Responive Web Design, from freeCodeCamp.
-          With the help of their resources, I have experimented with TypeScript,
-          and spefically Next.js. I have now finished my first real project in
-          Next.js. That project would be this website.
+          finished my course of Responive Web Design, from freeCodeCamp. With
+          the help of their resources, the wider internet, and my own
+          experimentation, I have experimented with TypeScript, and spefically
+          Next.js. I have now finished my first real project in Next.js. That
+          project would be this website.
           <br />
           <br />
           Currently, I serve as the go-to tech support for my family, old
