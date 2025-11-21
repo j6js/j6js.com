@@ -12,6 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// Set up metadata for the portfolio site
 export const metadata: Metadata = {
   title: "Jackson Kelly",
   description: "Jackson Kelly's Portfolio",
