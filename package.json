@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "brace-expansion": "2.0.2",
     "motion": "^12.25.0",
     "next": "16.1.1",
     "react": "^19.2.3",
