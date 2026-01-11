@@ -157,7 +157,7 @@ export default function Home() {
           </li>
         </ul>
       </div>
-      <div className="fixed inset-0 -z-10 bg-gradient-to-br from-slate-100 to-indigo-200 dark:from-slate-900 dark:to-indigo-900 w-full h-full"></div>
+      <div className="fixed inset-0 -z-10 bg-linear-to-br from-slate-100 to-indigo-200 dark:from-slate-900 dark:to-indigo-900 w-full h-full"></div>
     </div>
   );
 }
