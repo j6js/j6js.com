@@ -1,0 +1,16 @@
+[phases.setup]
+nixPkgs = ["bun", "nodejs", "openssl"]
+aptPkgs = ["curl", "wget"]
+
+[phases.install]
+cmds = [
+  "bun install --frozen-lockfile"
+]
+
+[phases.build]
+cmds = [
+  "bun run build"
+]
+
+[start]
+cmd = "bun run start"   
